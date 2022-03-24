@@ -3,6 +3,10 @@
     background-color: #013C4E;
 }
 
+h1, p {
+  font-family: 'Poiret One', cursive;
+  color: #FAB357;
+  text-align: center;
+}
 
-
-
+p{font-size:xx-large;}
