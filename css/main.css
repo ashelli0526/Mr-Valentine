@@ -1,4 +1,8 @@
-
+html {
+  height: auto;
+  margin: auto;
+  overflow: scroll;
+}
 .background-color {
     background-color: #013C4E;
 }
@@ -7,6 +11,118 @@ h1, p {
   font-family: 'Poiret One', cursive;
   color: #FAB357;
   text-align: center;
+  letter-spacing: .4rem;
 }
 
 p{font-size:xx-large;}
+
+.typewriter p {
+  color: #FAB357;
+  overflow: hidden;   
+  border-right: .06em solid #FAB357;
+  white-space: nowrap;   
+  margin: auto;   
+  letter-spacing: .4rem;   
+  animation: demo-typewriter 3s steps(30, end), demo-cursor 1s step-end infinite;
+}
+@keyframes demo-typewriter {
+  from { 
+    width: 0;
+  }
+  to { 
+    width: 50%;
+  }
+}
+
+@keyframes demo-cursor {
+  from, to { 
+    border-color: transparent; 
+}
+  50% { 
+border-color: #FAB357; 
+}
+
+}
+
+body {
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  background: #013C4E;
+}
+
+.rain {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rain.back-row {
+  display: none;
+  bottom: 60px;
+  opacity: 0.5;
+}
+
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
+}
+
+.stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+button {
+  border: none;
+  background: transparent;
+  color: #FAB357;
+  letter-spacing: .4rem;
+  padding: none;
+  font-size: xx-large;
+  border-radius: auto;
+  position: relative;
+  box-sizing: auto;
+  transition: all 500ms ease; 
+}
+button:hover{
+  color: #02231A;
+  border: transparent;
+  background:transparent;
+}
