@@ -22,6 +22,12 @@ body {
   line-height: 5em;
 }
 
+body {
+margin: 0;
+padding: 0;
+border: 5px dashed #149414;
+}
+
 .valentine {
   color: red;
 	background-color: pink;
@@ -147,6 +153,7 @@ position: absolute;
   body {
     background-color: #149414;
   }
+
   p{
     color: #031318;
   }
@@ -155,11 +162,44 @@ position: absolute;
 @media (min-width: 476px) and (max-width: 999px) {
   body {
     background-color: #149414;
+    margin: 0;
+    padding: 0;
+    border: 5px dashed #031318;
   }
   p{
     color: #031318;
   }
-  
+
+  .mind {
+    color: white;
+    text-align: center;
+    background-image: url(../img/brain.png);
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+   
+.mine-button {
+  border: none;
+  background: transparent;
+  color: #031318;
+  letter-spacing: .4rem;
+  font-size: x-large;
+  border-radius: auto;
+  padding-right: 5px;
+  position: relative;
+  box-sizing: auto;
+  transition: all 200ms ease; 
+}
+.mine-button:hover{
+  color: white;
+  border: transparent;
+  background-image: url(../img/heart.png);
+  background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+}
 }
 
 
