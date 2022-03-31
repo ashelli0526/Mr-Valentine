@@ -149,17 +149,8 @@ position: absolute;
   to { border-color: #149414 }
 }
 
-@media (max-width: 475px) {
-  body {
-    background-color: #149414;
-  }
 
-  p{
-    color: #031318;
-  }
-}
-
-@media (min-width: 476px) and (max-width: 999px) {
+@media (min-width: 1px) and (max-width: 999px) {
   body {
     background-color: #149414;
     margin: 0;
