@@ -28,22 +28,26 @@ body {
 }
 
  
-.nights-button {
+.mine-button {
   border: none;
   background: transparent;
-  color: #FAB357;
+  color: #149414;
   letter-spacing: .4rem;
   font-size: x-large;
   border-radius: auto;
   padding-right: 5px;
   position: relative;
   box-sizing: auto;
-  transition: all 500ms ease; 
+  transition: all 200ms ease; 
 }
-.nights-button:hover{
-  color: #02231A;
+.mine-button:hover{
+  color: white;
   border: transparent;
-  background:transparent;
+  background-image: url(../img/heart.png);
+  background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
 }
 
 .mind {
@@ -59,7 +63,7 @@ body {
   display: inline-block;
   border: none;
   background: transparent;
-  color: #FAB357;
+  color: #149414;
   letter-spacing: .4rem;
   font-size: x-large;
   border-radius: auto;
@@ -81,7 +85,7 @@ body {
   display: inline-block;
   border: none;
   background: transparent;
-  color: #FAB357;
+  color: #149414;
   letter-spacing: .4rem;
   font-size: x-large;
   border-radius: auto;
@@ -137,4 +141,30 @@ position: absolute;
 @keyframes blinking-cursor {
   from { border-color: transparent }
   to { border-color: #149414 }
+}
+
+@media (max-width: 475px) {
+  body {
+    background-color: #149414;
+  }
+  p{
+    color: #031318;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 999px) {
+  body {
+    background-color: #149414;
+  }
+  p{
+    color: #031318;
+  }
+  
+}
+
+
+@media (min-width: 1000px) {
+  body {
+    background-color: #031318;
+  }
 }
